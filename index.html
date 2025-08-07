@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Error 404</title>
+    <!-- start css and style -->
+    <link href="css/bootstrap-rtl.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-xs-12">
+<div class="wrapper"><!-- start text box -->
+<div class="TextHolder">
+<div class="Texts">
+<div class="FourOhFour">404</div>
+
+<div class="Maybe">ＯＨ, ⅯＡＹＢＥ<span>𝐓𝐇𝐄𝐑𝐄 𝐈𝐒 𝐀 𝐏𝐑𝐎𝐁𝐋𝐄𝐌</span></div>
+
+<div class="Bad">👇 👇</div>
+
+<div class="https://t./me/ourbots_bot"><a href="https://telegram.me/ourbots_bot?start">touch me 👅</a></div>
+</div>
+</div>
+<!-- end text box --><!-- start monster details -->
+
+<div class="Body">
+<div class="LeftEye"></div>
+
+<div class="RightEye"></div>
+
+<div class="EyeShadows"></div>
+
+<div class="Mouth"></div>
+
+<div class="MouthShadows"></div>
+
+<div class="Theet"></div>
+
+<div class="BodyTexture"></div>
+</div>
+
+<div class="Horns">
+<div class="HornsExtras"></div>
+</div>
+
+<div class="LeftHand"></div>
+
+<div class="RightHand"></div>
+<!-- end monster details --></div>
+</div>
+</div>
+</div>
+<!-- start java script -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+// ارسال درخواست حذف کاربر از لیست آنلاین‌ها هنگام خروج
+window.onbeforeunload = function() {
+    fetch('remove_user.php', {
+        method: 'POST',
+        body: JSON.stringify({ ip: '<?php echo $_SERVER['REMOTE_ADDR']; ?>' })
+    });
+};
+</script>
+</body>
+</html>
